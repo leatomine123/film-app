@@ -1,10 +1,219 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film app</title>
+
 </head>
+
 <body>
-    <h1>Film app</h1>
+
+
+    <div id="authenticateUI" class="hidden">
+        <p>Register or Authenticate</p>
+        <input type="email" id="userEmail"><button id="userAuthButton">send</button>
+    </div>
+
+    <div class="header">
+        <h1>Film app</h1>
+    </div>
+
+
+    <div style="padding-left:15px;"></div>
+    <h2>Nye filmer</h2>
+    <ul class="list">
+        <li>
+            <img src="/img/wehaveaghost.jpg" alt="" class="cover" />
+            <p class="title">We have a ghost</p>
+            <p class="genre">familiefilm/Fantasy</p>
+            <div class="overlay">
+                <div class="text">Hello World</div>
+              </div>
+        </li>
+
+        <li>
+            <img src="/img/scream6.jpg" alt="" class="cover" />
+            <p class="title">Scream VI</p>
+            <p class="genre">Skrekk/Mysterie</p>
+        </li>
+
+        <li>
+            <img src="/img/fall.jpg" alt="" class="cover" />
+            <p class="title">Fall</p>
+            <p class="genre">Thriller/Overlevelse</p>
+        </li>
+
+        <li>
+            <img src="/img/dontworrydarling.jpg" alt="" class="cover" />
+            <p class="title">Don't worry darling</p>
+            <p class="genre">Thriller/Mysterie</p>
+        </li>
+
+        <li>
+            <img src="/img/terrifyer2.jpg" alt="" class="cover" />
+            <p class="title">Terrifyer 2</p>
+            <p class="genre">Skrekk/Slasher-film</p>
+        </li>
+
+    </ul>
+
+
+    <div style="padding-left:15px;"></div>
+    <h2>Populære filmer</h2>
+    <ul class="list">
+        <li>
+            <img src="/img/everythingeverywhere.jpg" alt="" class="cover" />
+            <p class="title">Everything everywhere all at once</p>
+            <p class="genre">Eventyr/Sci-Fi </p>
+        </li>
+
+        <li>
+            <img src="/img/X.jpg" alt="" class="cover" />
+            <p class="title">X</p>
+            <p class="genre">Skrekk/Thriller</p>
+        </li>
+
+        <li>
+            <img src="/img/dune.jpg" alt="" class="cover" />
+            <p class="title">Dune</p>
+            <p class="genre">Sci-Fi/Eventyr</p>
+        </li>
+
+        <li>
+            <img src="/img/spiderman.jpg" alt="" class="cover" />
+            <p class="title">Spider-man: No way home</p>
+            <p class="genre">Action/Eventyr</p>
+        </li>
+
+        <li>
+            <img src="/img/elvis.jpg" alt="" class="cover" />
+            <p class="title">Elvis</p>
+            <p class="genre">Musikal/Drama</p>
+        </li>
+
+    </ul>
+
+    <div style="padding-left:15px;"></div>
+    <h2>Anbefalt fra venner</h2>
+    <ul class="list">
+        <li>
+            <img src="/img/gremlings.jpg" alt="" class="cover" />
+            <p class="title">Gremlings</p>
+            <p class="genre">Skrekk/Fantasy </p>
+        </li>
+
+        <li>
+            <img src="/img/ettglasstil.jpg" alt="" class="cover" />
+            <p class="title">Ett glass til</p>
+            <p class="genre">Drama/Dramakomedie </p>
+        </li>
+
+        <li>
+            <img src="/img/taken.jpg" alt="" class="cover" />
+            <p class="title">Taken</p>
+            <p class="genre">Action/Thriller</p>
+        </li>
+
+        <li>
+            <img src="/img/backtothefuture.jpg" alt="" class="cover" />
+            <p class="title">Back to the future</p>
+            <p class="genre">Sci-Fi/Komedie</p>
+        </li>
+
+        <li>
+            <img src="/img/carrie.jpg" alt="" class="cover" />
+            <p class="title">Carrie</p>
+            <p class="genre">Skrekk/Thriller </p>
+        </li>
+
+
+
+        <style>
+            @media screen and (max-width:600px) {}
+
+            body {
+                background-color: #292c33;
+                margin: 0px;
+                
+                align-items: center;
+                text-align: center;
+
+            }
+
+            .header {
+                padding: 5px;
+                text-align: center;
+                background: black;
+                color: white;
+                font-size: 30px;
+                
+            }
+
+            .cover {
+                
+                display: block;
+            }
+
+            img {
+                width: 200px;
+                height: 270px;
+                margin: 0 auto 5px auto;
+                cursor: pointer;
+            }
+
+            h2 {
+                color: white;
+            }
+
+
+
+
+            .hidden {
+                display: none;
+            }
+
+            .list {
+                margin: 20px;
+                margin-right: 0;
+                display: inline-flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            li {
+                flex: 0 0 130px;
+                padding-bottom: 30px;
+                margin-right: 70px;
+                position: reltive;
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+
+            .title {
+                font-weight: bold;
+                font-size: 20px;
+                margin-bottom: 4px;
+                color: white;
+
+            }
+
+            .genre {
+                color: grey;
+                font-size: 15px;
+            }
+
+
+            
+        </style>
 </body>
 
 
