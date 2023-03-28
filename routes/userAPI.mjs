@@ -14,7 +14,7 @@ if(process.env.debug ){ // For å ungå å måtte lage nye tokens hver gang vi t
     secret = process.env["CRYPTO_SEECRET"] ;
 }
 
-const salt = process.env["SALT"] 
+const salt = process.env["SALT"] //får nullere og andre ting som feks passordet ikke blir leslig. 
 
 const userAPIRoute = express.Router();
 

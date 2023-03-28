@@ -20,8 +20,8 @@ server.use((req,res,next)=>{
 
 server.use(express.json());
 
-//server.use(API_ENDPOINTS.base,encryptionAPIRoute);
-//server.use("/user",userAPIRoute);
+server.use(API_ENDPOINTS.base,encryptionAPIRoute);
+server.use("/user",userAPIRoute);
 
 
 server.listen(server.get('port'), function () {
