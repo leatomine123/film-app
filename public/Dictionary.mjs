@@ -1,3 +1,16 @@
+const no = {
+    "end":"This is the end",
+    "searchbox":"Søk...."
+
+}
+
+const en = {
+    "end":"This is the end",
+    "searchbox":"Search...."
+
+}
+
+
 
 class Dictionary{
 
@@ -7,21 +20,22 @@ class Dictionary{
         this.currentLanguage = null
     }
 
-    setLanguage = async function(lang){
+    setLanguage =  function(lang){
         // Velger språket som skal brukes.
-
-        let languageFile = this.languagefiles.find( file => {
-             return file.indexOf(lang) != -1
-            });
-        
+ 
         this.currentLanguage = lang;
 
-        this.dictionary = await import(languageFile, { assert: { type: "json" } });
+        this.dictionary = lang === "no" ? no:en;
+        
     }
 
     get = function(key){
         // Henter riktig verdi basert på key i dictionary.
         return this.dictionary[key];
+    }
+
+    getAll = function() {
+        return this.dictionary;
     }
 
     keys = function(){
